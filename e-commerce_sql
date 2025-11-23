@@ -7,7 +7,7 @@ GROUP BY p.category
 ORDER BY revenue DESC;
    
 % of customers who placed more than one order.
-
+    
 WITH order_count AS (
     SELECT customer_id, COUNT(*) AS total_orders
     FROM orders
